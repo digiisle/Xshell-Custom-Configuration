@@ -1,0 +1,17 @@
+undo terminal monitor
+
+display device elabel backplane
+display device
+  
+display version
+       
+display startup
+display patch-information
+display device temperature all
+  
+display cpu
+  
+display device fan
+ 
+terminal monitor
+

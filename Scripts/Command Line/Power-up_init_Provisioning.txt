@@ -1,0 +1,114 @@
+admin
+admin@huawei.com
+y
+admin@huawei.com
+Admin@123
+Admin@123
+
+clock timezone BeiJing add 08:00:00
+system-view
+sysname LG-M217-S5720-01
+telnet server enable
+lldp enable
+
+stp mode rstp
+stp bpdu-protection
+
+header shell information %
+****************************WARNING***********************************
+The wlte you are about to enter is restricted to authorised users only.
+All accesses are highly regulated and monitored. Legal action will
+be taken against any unauthorised access.
+Please logout if you are not authorised to enter.
+By order of the organisation policy.
+HOSTNAME:LG-M217-S5720-01
+**********************************************************************
+%
+
+aaa
+ 
+ local-user admin service-type terminal telnet ssh
+ local-user admin privilege level 15
+quit
+
+stelnet server enable
+ssh server timeout 120
+ssh user admin
+ssh user admin authentication-type password
+ssh user admin service-type stelnet
+ssh authentication-type default password
+ssh client first-time enable
+
+user-interface vty 0 4
+  authentication-mode aaa
+  idle-timeout 30 0
+  protocol inbound all
+quit
+
+user-interface con 0
+ authentication-mode password
+ set authentication password cipher Admin@123
+ idle-timeout 30 0
+quit
+
+vlan batch 50 100
+vlan 50
+  description Acc_TOC
+vlan 100
+  description Mgt_TOC
+
+interface vlanif 100
+ ip address 10.119.128.8 25
+  description Mgt_TOC
+quit
+
+interface eth-trunk 1
+ description To_ LG-CORE-S12808
+ mode lacp
+ port link-type trunk
+ port trunk allow-pass vlan 50 100
+quit
+
+interface XGigabitEthernet 0/0/1
+ eth-trunk 1
+quit
+
+interface XGigabitEthernet 0/0/2
+ eth-trunk 1
+quit
+
+interface range  GigabitEthernet0/0/1 to GigabitEthernet0/0/48
+ port link-type access
+ port default vlan 50
+ stp edged-port enable
+quit
+
+ip route-static 0.0.0.0 0.0.0.0 10.119.128.126
+
+
+quit
+save
+y
+
+system-view
+interface GigabitEthernet0/0/1
+ port default vlan 100
+quit
+quit
+
+ftp 10.119.128.100
+ftp
+
+get S5720LI-V200R011SPH018.pat
+
+By
+pat load S5720LI-V200R011SPH018.pat all run
+
+system-view
+interface GigabitEthernet0/0/1
+ port default vlan 50
+quit
+quit
+save
+y
+
