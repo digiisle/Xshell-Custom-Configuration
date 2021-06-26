@@ -1,0 +1,20 @@
+[Color Scheme]
+background=dfdbc3
+text=000000
+text(bold)=000000
+black=000000
+black(bold)=808080
+red=cc0000
+red(bold)=cc0000
+green=009600
+green(bold)=009600
+yellow=d06b00
+yellow(bold)=d06b00
+blue=0000cc
+blue(bold)=0000cc
+magenta=c61c6f
+magenta(bold)=ff0000
+cyan=0087cc
+cyan(bold)=0087cc
+white=cccccc
+white(bold)=ffffff
