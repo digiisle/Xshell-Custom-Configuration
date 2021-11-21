@@ -19,8 +19,11 @@ Xshell自定义配置，包含字体、背景、高亮匹配规则；包含自�
 - [x] HighlightSet校准显示颜色
 
 ## 运行展示
+### Novel light patch_1.0
 ![Novel light patch_1.0](https://i.postimg.cc/Hnnt8m6h/Novel-light-patch-1-0.png)  
+### solarized dark patch_1.0
 ![solarized dark patch_1.0](https://i.postimg.cc/tC15XXZ1/solarized-dark-patch-1-0.png)  
+### solarized light patch_1.0
 ![solarized light patch_1.0](https://i.postimg.cc/c1khyKHy/solarized-light-patch-1-0.png)  
 
 ## LICENSE
