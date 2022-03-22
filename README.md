@@ -20,11 +20,11 @@ Xshell自定义配置，包含字体、背景、高亮匹配规则；包含自�
 
 ## 运行展示
 ### Novel light patch_1.0
-![Novel light patch_1.0](https://i.postimg.cc/Hnnt8m6h/Novel-light-patch-1-0.png)  
+![Xshell_Novel-light.png](https://s2.loli.net/2022/03/22/gZ5oh4S8uBnJAlq.png)  
 ### solarized dark patch_1.0
-![solarized dark patch_1.0](https://i.postimg.cc/tC15XXZ1/solarized-dark-patch-1-0.png)  
+![Xshell_solarized-dark.png](https://s2.loli.net/2022/03/22/wag4OD8G15pxENS.png)  
 ### solarized light patch_1.0
-![solarized light patch_1.0](https://i.postimg.cc/c1khyKHy/solarized-light-patch-1-0.png)  
+![Xshell_solarized-light.png](https://s2.loli.net/2022/03/22/48Fz1JmacNSktCd.png)  
 
 ## LICENSE
 [License file](https://github.com/ErickQian/Xshell-Custom-Configuration/blob/master/LICENSE)
